@@ -1,0 +1,1 @@
+In Objective-C, a rare but impactful bug can occur due to the misuse of the `retain` and `release` methods (or their modern counterparts, `strong` and `weak` properties) within a custom `dealloc` method.  Specifically, if you attempt to release an object that's already been released or isn't owned by the current object, you'll trigger a double-release or a crash.
