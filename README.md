@@ -1,0 +1,3 @@
+# Objective-C Dealloc Bug: Double-Release or Crash
+
+This repository demonstrates a common yet subtle bug in Objective-C related to object ownership management within the `dealloc` method. Improper handling of object releases can lead to crashes or unexpected behavior.  The `BuggyDealloc.m` file showcases the erroneous code, while `FixedDealloc.m` provides the corrected version.  The core issue revolves around releasing objects that are no longer owned by the current object or attempting to release an object twice.  The example highlights the importance of carefully managing object lifecycles in Objective-C to avoid memory corruption and application instability.
